@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"
+        <title>Documento</title>
+    </head>
+    <body>
+
+    </body>
+  </html>
+
+  <body>
+    <p>Aula de Programação Front-End - 16/02 </p>
+
+    A tag <html> é ultilizada para informar ao
+    navegador que tipo de estrutura esta sendo
+    construída, podendo ter títulos, parágrafos,
+    imagens, links, entre outros.
+    Existem diversas tags do HTML, mas as principais
+    são: title, meta, head, body, footer e div.
+    Dentro dessa tag é nescessário
+    declarar outras duas tags: head e body
+
+  </body>
+</html>
