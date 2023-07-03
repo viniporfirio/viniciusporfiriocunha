@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #f3ebd4;
+    width: auto;
+    height: 300px;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 800px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+
+}
+
+form{
+    display: block;
+}
+
+.Nav-menu ul{
+    list-style: none;
+}
+
+.Home{
+    position: absolute;
+    left: 50px;
+    top: 250px;
+
+}
+
+.Produtos{
+    position: absolute;
+    left: 50%;
+    top: 250px;
+}
+
+
+.Contatos{
+    position: absolute;
+    left: 90%;
+    top: 250px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+form{
+    margin: 40px ;/*margem superior e inferior de 40px, para os lados 0*/
+    margin-left: 100px;
+    
+}
+
+form label, form p{
+    /*Vamos resplicar a mesma configuração do form label para o parágrafo, por isso, o uso da vírgula*/
+
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;/* 10px para baixo*/
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;/*para baixo*/
+    padding: 10px 25px; /*largura dos meus inputs*/
+    text-align: center;
+}
+
+input::placeholder{
+    color: rgb(25, 93, 25);
+    
+}
+
+.checkbox{
+    margin: 20px 0; /*20 px p/ cima e p/baixo e zero nas laterais*/
+    
+}
+
+.enviar{
+    width: 250px;
+    padding: 15px 0;
+    background-color: rgb(17, 75, 56);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 1.0s all;
+    cursor: pointer;
+    margin-left: 300px;
+    
+
+}
+
+.enviar:hover{
+    background:rgb(28, 45, 39) ;
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: #f3ebd4;
+    width: auto;
+    height: 300px;
+}
+
+
+.copyright{
+    color: black;
+    position: absolute;
+    bottom: -500px;
+    left: 45%;
+}

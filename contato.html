@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-   <link rel="stylesheet" href="contato.css">
-   <link rel="stylesheet" href="Ananda Personal Use.ttf">
+    <link rel="stylesheet" type="text/css" href="contato.css">
+
     <title>contato</title>
 </head>
+
 <body>
     <header>
-        <img ide="logo" src="link" width="250px" heigth="250px"
-     <h1 class="titulo-principal">Livraria</h1>
+        <div class="logo">
+            <img ide="logo" src="./1-removebg-preview.png">
+        </div>
+        <div class="nav-head">
+            <h1>Livraria</h1>
+        </div>
+
+        <div class="Nav-menu">
+            <nav>
+                <ul>
+                    <li class="Home"><a href="#"> Home</a></li>
+                    <li class="Produtos"><a href="#">Produtos</a></li>
+                    <li class="Contatos"><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-    <ul>
-        <li>Home</li>
-        <li>Produtos</li>
-        <li>Contatos</li>
-    </ul>
-  </nav>
-</header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" name="nome" id="nomesobrenome" class="input-padrao" placeholder="Seu nome e sobrenome">
+            <br>
 
-<main>
-    <form>
-        <fildset class="box">
-        <label for="nomesobrenome">Nome e Sobrenome</label>
-        <input type="text" name="nome" id="nomesobrenome" class="input-padrao" placeholder="Seu nome e sobrenome"
+            <label for="email">Email</label>
+            <input type="email" name="email" class="input-padrao" placeholder="seuemail@email" request>
+            <br>
 
-        <label> for="email">Email</label>
-        <input type="email" name="email" class="input-padrao" placeholder="seuemail@email" requst
-         
-</main>
+            <label for="telefone">Telefone</label>
+            <input type="text" name="nome" id="(xx)xxxx-xxxx" class="input-padrao" placeholder="(xx)xxxx-xxxx">
+            <br>
+            <button type="submit">Cadastro</button>
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright - Vinícius Pofirio</p>
+    </footer>
 </body>
+
 </html>
