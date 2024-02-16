@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <title> Formulário aula fornt-end </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumidor de API com Tabela Bootstrap</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script>
+async function fetchApiData() {
+  const apiUrl = 'https://api.invertexto.com/v1/faker?token=6425|at4CHIcGEXPa2vbKVMksg84sWP7cr2qp&locale=pt_BR';
+  let tableContent = '';
+  for (let i = 0; i < 5; i++) {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    tableContent += `
+      <tr>
+        <td>${data.uuid}</td>
+        <td>${data.name}</td>
+        <td>${data.cpf}</td>
+        <td>${data.birth_date}</td>
+        <td>${data.email}</td>
+      </tr>
+    `;
+  }
+  document.getElementById('apiTableBody').innerHTML = tableContent;
+}
+</script>
 </head>
 <body>
-    <form method="post" action="">
-       <input type="text" size="50" maxlength="40" placeholder="digite nome completo"
-     <br>
-       <input type="date">
-     <br>
-       <input type="number" size="10">
-     <br>
-       <select name="nome-cidade">
-        <br>
-          <option>cascavel</option>
-          <option>corbélia</option>
-          <option>maringá</option>
-          <option>londrina</option>
-     </select>
-     <br>
-     <input type="email">
-     <br>
-     <input type="password" size="10" maxlength="10" placeholder="digite numeros">
-     <br>
-     <input type="tel">
-     <br>
-     <input type="checkbox" nome="curso" value="informática">informática
-     <br>
-     <input type="checkbox" nome="curso" value="adiministração">adiministração
-     <br>
-     <input type="checkbox" nome="curso" value="eletronica">eletronica
-     <br>
-     <input type="radio" name="periodo" value="matutino">matutino
-     <br>
-     <input type="radio" name="periodo" value="vespertino">vespertino
-     <br>
-     <input type="radio" name="periodo" value="notruno">notruno
-     <br>
-     <input type="submit" value="enviar dados"
-     <br>
-     <input type="reset" value="apagar dados">
-     <br>
 
-    </body>
+<div class="container mt-5">
+  <h1>Consumidor de API com Tabela Bootstrap</h1>
+  <button class="btn btn-primary" onclick="fetchApiData()">Gerar Tabela</button>
+  <table class="table mt-3">
+    <thead class="thead-dark">
+      <tr>
+        <th>UUID</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Data de Nasc.</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="apiTableBody">
+      <!-- Os dados da API serÃ£o inseridos aqui -->
+    </tbody>
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
-
-    
-
-
-    
